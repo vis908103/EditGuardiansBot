@@ -7,10 +7,10 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-BOT_TOKEN = "bot token gir"
-MONGO_URI = "mongo db gir"
-OWNER_ID = kendi idni gir 
-LOGGER_GROUP_ID = log bot id gir
+BOT_TOKEN = "8081003333:AAFYXlsgCJWnNnt5vKLBxHkIVAiad5c4zOU"
+MONGO_URI = "eg3skk3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+OWNER_ID = 1008989961
+LOGGER_GROUP_ID = -4825904819
 
 API_ID = 23480691
 API_HASH = "519068128f1f5767dfeb224c15d23949"
@@ -91,18 +91,18 @@ async def handle_start(event):
     await bot.send_message(LOGGER_GROUP_ID, message, file=photo)
 
     start_text = (
-        f"Merhaba {mention} 👋, ben senin 𝗘𝗱𝗶𝘁 𝗚𝘂𝗮𝗿𝗱𝗶𝗮𝗻 Bot’un, buradaki konuşmaların güvenliğini sağlamak için buradayım.\n\n"
-        "🚫 *Düzenlenen mesajları silerim.*\n\n"
-        "📣 *Bildirimler:* Herhangi bir mesaj silindiğinde seni bilgilendireceğim.\n\n"
-        "🌟 *Başlayalım:* \n"
-        "1. Beni grubuna ekle.\n"
-        "2. Anında korumaya başlarım.\n\n"
-        "➡️ Beni eklemek için 𝗔𝗱𝗱 𝗚𝗿𝗼𝘂𝗽 butonuna tıkla ve grubumuzu güvende tut!"
+        f"Merhaba {mention} 👋 I'm your 𝗘𝗱𝗶𝘁 𝗚𝘂𝗮𝗿𝗱𝗶𝗮𝗻 𝗕𝗼𝘁, here to maintain a secure environment for our discussions.\n\n"
+       " 🚫 𝗘𝗱𝗶𝘁𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗗𝗲𝗹𝗲𝘁𝗶𝗼𝗻: 𝗜'𝗹𝗹 𝗿𝗲𝗺𝗼𝘃𝗲 𝗲𝗱𝗶𝘁𝗲𝗱 𝗺𝗲𝘀𝘀𝗮𝗴𝗲𝘀 𝘁𝗼 𝗺𝗮𝗶𝗻𝘁𝗮𝗶𝗻 𝘁𝗿𝗮𝗻𝘀𝗽𝗮𝗿𝗲𝗻𝗰𝘆.*\n\n"
+        "📣 𝗡𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀: 𝗬𝗼𝘂'𝗹𝗹 𝗯𝗲 𝗶𝗻𝗳𝗼𝗿𝗺𝗲𝗱 𝗲𝗮𝗰𝘁𝗶𝗺𝗲 𝘁𝗶𝗺𝗲 𝗮 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗶𝘀 𝗱𝗲𝗹𝗲𝘁𝗲𝗱.\n\n"
+        🌟 𝗚𝗲𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱:* \n"
+        "1. Add me to your group.\n"
+        "2. I'll start protecting instantly.\n\n"
+        "➡️ Click on 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 to add me and keep our group safe!"
     )
     buttons = [
-        [Button.url("Güncelleme Kanalı", "https://t.me/TurkUserBotKanali"),
-         Button.url("Güncelleme Grubu", "https://t.me/TurkUserBotKanali")],
-        [Button.url("Gruba Ekle", "https://t.me/NsfwDrugsblockbot?start=start")]
+        [Button.url("𝐒ᴜᴘᴘᴏʀᴛ 𝐂ʜᴀɴɴᴇʟ", "t.me/anime_india_divi"),
+         Button.url("𝐒ᴜᴘᴘᴏʀᴛ 𝐂ʜᴀᴛ", "https://t.me/anime_india_divine")],
+        [Button.url("𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽", "https://t.me/GuardianDivine_bot?startgroup=true")]
     ]
     await event.respond(start_text, buttons=buttons)
     
@@ -136,9 +136,9 @@ async def on_message_edited(event):
 
         reason = f"**⚠️ {mention}**, your message was deleted because it contained an **{what_edited}.**"
         buttons = [
-    [Button.url("Update Channel", "https://t.me/TurkUserBotKanali"),
-     Button.url("Update Group", "https://t.me/TurkUserBotKanali")],
-    [Button.url("Add Group", "https://t.me/NsfwDrugsblockbot?start=start")]
+    [Button.url("Update Channel", "https://t.me/Anime_ibdia_divi"),
+     Button.url("Update Group", "https://t.me/Anime_india_divine")],
+    [Button.url("Add Group", "https://t.me/GuardianDivineBot?start=start")]
     ]
         await event.reply(reason, buttons=buttons)
     except Exception:
@@ -186,13 +186,13 @@ async def handle_bot_added_to_group(event):
                 action_emoji = "➕" if event.user_added else "➖"
                 current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 message = (
-                    f"✨ *Grup Aktivite Günlüğü*\n"
+                    f"✨ *Group Activity Diary*\n"
                     f"━━━━━━━━━━━━━━━━━━━\n"
                     f"👥 *Grup ID:* `{event.chat_id}`\n"
-                    f"🏷️ *Grup Adı:* {chat.title}\n"
+                    f"🏷️ *Grup Name:* {chat.title}\n"
                     f"{action_emoji} *Eylem:* {'Eklendi' if event.user_added else 'Çıkartıldı'}\n"
-                    f"⏰ *Zaman:* `{current_time}`\n"
-                    f"📡 *Bot Durumu:* Aktif\n"
+                    f"⏰ *Time:* `{current_time}`\n"
+                    f"📡 *Bot Status:* Aktif\n"
                     f"━━━━━━━━━━━━━━━━━━━\n"
                 )
                 await bot.send_message(LOGGER_GROUP_ID, message, link_preview=False)
